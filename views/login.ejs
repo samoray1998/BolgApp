@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('layouts/header'); -%>
+
+    <body>
+        <%- include('layouts/navbar'); -%>
+        <header class="masthead" style="background-image: url('img/contact-bg.jpg')">
+            <div class="overlay"></div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                  <div class="page-heading">
+                    <h1>Sign in</h1>
+                    <span class="subheading">Welcome to our web site !!</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+          <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <form action="/users/login" method="POST" enctype="multipart/form-data">
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls">
+                                <label>User Name</label>
+                                <input type="text" class="form-control" placeholder="User Name" id="username" name="username" value="jamal123">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group floating-label-form-group controls">
+                                <label>Password</label><input type="password" class="form-control" placeholder="Password" id="password" value="jamal123"
+                                    name="password">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+          </div>
+            <%- include('layouts/footer'); -%>
+                <!-- Bootstrap core JavaScript -->
+            <%- include('layouts/scripts'); -%>
+    </body>
+
+</html>
